@@ -1,0 +1,184 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+main a:visited {
+    color: #920b18;
+}
+a.mail{
+    color: black;
+}
+html body {
+    color: #FFDF36;
+    font-family: 'Exo 2', sans-serif;
+    max-width: 960px;
+    margin: auto;
+    background: linear-gradient(#80abab,darkslategray);
+
+
+}
+html body main{
+    font-family: 'Open Sans', sans-serif;
+    background-color: darkslategray;
+    display: block;
+
+}
+
+nav li{
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #444444;
+}
+nav li a{
+    text-decoration: none;
+    display: block;
+    padding: 2rem;
+    color: #FFFFFF;
+    transition: background-color 1s;
+    text-transform: capitalize;
+}
+nav a:hover{
+    background-color: #005f5f;
+    color: #FFFFFF;
+}
+nav ul{
+
+    background-color: #444444;
+
+}
+img+nav{
+    overflow: auto;
+}
+
+
+main h1{
+    padding: 1rem;
+    margin: 2rem;
+}
+main aside{
+
+    line-height: 20px;
+}
+main section{
+    margin: 20px;
+}
+ body main  section p{
+    padding-bottom: 2rem;
+}
+ aside p{
+     margin-bottom: 5px;
+ }
+ main article img{
+     float: right;
+ }
+
+form {
+    display: inline-block;
+    background-color: darkslategray;
+    width:98%;
+    margin: 0 auto;
+    padding: 0.4em;
+}
+form legend{
+    font-size: 2rem;
+}
+fieldset {
+    margin-top: 1em;
+    border: none;
+    margin-left:0;
+}
+
+label {
+    display:block;
+    text-align: left;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    box-sizing: border-box;
+
+}
+
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=email],
+input[type=date],
+input[type=submit],
+input[type=url],
+textarea,
+select {
+    width:100%;
+    border: 1px solid #456;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0 .2em .2em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=submit] {
+    margin:0.5em 0;
+    border: 1px solid #456;
+    background-color: #456;
+    color: #fff;
+}
+
+text-area,
+label {
+    vertical-align: top;
+
+}
+
+input:focus,
+textarea:focus, select:focus {
+    border: 1px solid #999;
+    background-color:#ccc;
+    outline: none;
+
+}
+body nav a.active{
+    background-color: black;
+    color: #FFFFFF;
+}
+
+
+
+main>ul {
+    display: grid;
+     grid-gap: 15px 15px;
+     justify-content: center;
+     justify-items: start;
+
+
+
+}
+body h2,body h3, body h4{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+header, footer, aside{
+    background-color: darkslategray;
+}
+.gebouw{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media all and (min-width:38rem ) {
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    main > ul {
+
+        grid-template-columns: repeat(2, auto);
+
+
+
+
+    }
+}

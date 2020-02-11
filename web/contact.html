@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DVB machinehandel</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.jpg">
+
+</head>
+<body>
+
+<header>
+
+    <nav>
+        <ul>
+            <li><img src="img/logo.jpg" alt="logo"></li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="over%20ons.html">over ons</a></li>
+            <li><a href="contact.html" class="active">contact</a></li>
+            <li><a href="aanbod.html">aanbod</a></li>
+        </ul>
+    </nav>
+    <h1>DVB machinehandel</h1>
+</header>
+
+<main>
+    <form>
+
+    <fieldset>
+        <legend>Contact gegevens</legend>
+        <p>
+            <label for="name">Naam contact persoon* </label>
+            <input id="name" size="60" maxlength="128" type="text" required placeholder="voornaam familienaam">
+        </p>
+
+
+        <p>
+            <label for="organisation">Organisatie's naam </label>
+            <input type="text" id="organisation">
+        </p>
+
+        <p>
+            <label for="email">Email </label>
+            <input id="email" type="email" size="60">
+        </p>
+
+        <p>
+            <label for="tel">Telefoon nummer(fixed or mobile)* </label>
+            <input type="tel" id="tel" size="60" maxlength="20" required>
+        </p>
+
+        <p>
+            <label for="address">Volledig Adres* </label>
+            <textarea id="address" cols="40" rows="4" required></textarea>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Wat wenst u te doen</legend>
+
+        <p>
+            <label for="info" >Wat verzoekt u? </label>
+            <select id="info" title="info" required size="1">
+                <option value=""> informatie</option>
+                <option value="1"> een probleem melden</option>
+                <option value="2"> offerte aanvragen</option>
+                <option value="3">gewoon een vraag</option>
+
+            </select>
+
+
+        </p>
+
+        <p>
+        <label for="verduidelijking">Verduidelijking van verzoek </label>
+        <textarea id="verduidelijking" cols="60" rows="10"></textarea>
+    </p>
+
+    </fieldset>
+        <fieldset>
+            <legend> Als u een probleem heeft</legend>
+        <p>
+            <label for="probleem">Beschrijf het probleem </label>
+            <input type="text" id="probleem" size="60" maxlength="128">
+        </p>
+        <p>
+            <label for="datumprobleem">Wanneer probleem begonnen </label>
+            <input type="date" id="datumprobleem" ></p>
+
+
+
+
+        <p><input type="submit" id="submit" value="Send"></p>
+    </fieldset>
+</form>
+</main>
+
+<footer>
+    <address>&copy;Gerben Piot Website by <a  class="mail" href="mailto:gerben.piot@student.ucll.be"> gerben.piot@student.ucll.be.</a>
+    </address>
+
+</footer>
+</body>
+</html>
